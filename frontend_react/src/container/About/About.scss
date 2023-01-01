@@ -1,0 +1,148 @@
+.app__about {
+    flex:1;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+
+.app__profiles{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+
+}
+
+.app__profile-item{
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem;
+    img{
+        width: 100%;
+        height: 170px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+
+    @media screen and (min-width: 2000px){
+        width: 370px;
+        margin: 2rem 4rem;
+
+
+        img{
+            
+            height: 350px;
+        }
+        
+}
+
+
+}
+
+.about_container{
+    width: 80%;
+    flex-direction: column;
+    margin: 2rem;
+
+    .p-text{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin: 2rem;
+        font-size: large;
+    }
+
+    @media screen and (min-width: 2000px){
+        width: 370px;
+        margin: 2rem 6rem;}
+
+
+    
+}
+
+
+/*timeline*/
+
+.timeline{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem;
+    grid-gap: 3rem;
+    padding-bottom: 3rem;
+    .timeline-item{
+        position: relative;
+        padding-left: 2rem;
+        .tl-icon{
+            position: absolute;
+            left: -30px;
+            top: 0;
+            background-color: var(--secondary-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            color: var(--primary-color);
+            justify-content: center;
+            i { font-size: 1.3rem; }
+
+        }
+    
+    
+
+
+    }
+    .tl-duration{
+        padding: .2rem .6rem;
+        background-color: var(--secondary-color);
+        border-radius: 15px;
+        display: inline-block;
+        font-size: .8rem;
+        text-transform: capitalize;
+        font-weight: 250;
+        color: white;
+        
+    }
+
+    h5{
+        padding: 1rem 0;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 600;
+        span{
+            color: var(--secondary-color);
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+    
+    
+    }
+
+    ul{
+        
+        width: 70%;
+        display: inline-block;
+        list-style: none;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:400px){
+
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
+}
